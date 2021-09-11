@@ -399,3 +399,4 @@ def from_contents(contents, data=None, id_column='id'):
         df = concat([data, df], axis=1)
     df.index.name = id_column
     return df.reset_index().set_index(cat_names)
+
